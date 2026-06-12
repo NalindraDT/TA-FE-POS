@@ -1,5 +1,6 @@
 package com.example.tugasakhirpos
 
-import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity // <-- Ubah import ini
 
-class MainActivity : FlutterActivity()
+class MainActivity: FlutterFragmentActivity() { // <-- Ubah class ini
+}

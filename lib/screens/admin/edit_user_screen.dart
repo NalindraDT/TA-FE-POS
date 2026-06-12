@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugasakhirpos/config/api_config.dart';
 
 class EditUserScreen extends StatefulWidget {
   final Map<String, String> initialUserData; // Menampung data pengguna awal untuk diedit
@@ -33,7 +34,7 @@ class _EditUserScreenState extends State<EditUserScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDFDFD), // Warna background putih tulang
+      backgroundColor: const Color(0xFFFDFDFD),
       appBar: AppBar(
         backgroundColor: Colors.white,
         foregroundColor: const Color(0xFF2C3E50),
@@ -55,7 +56,6 @@ class _EditUserScreenState extends State<EditUserScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // 1. BANNER INFO (USER ID - TIDAK DAPAT DIUBAH)
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   decoration: BoxDecoration(
